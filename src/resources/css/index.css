@@ -7,9 +7,13 @@
   /* NavBar */
 
   .navbar{
-    display:flex;
-    position:sticky;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    display:flex; 
+    position:fixed;
     z-index: 999; 
+    
   }
   .navbar-logo {
     display: flex;
@@ -62,13 +66,50 @@
     transform-origin: bottom left;
   }
 
+  .search-icon{
+    border:2px solid black;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-top: 0.4rem;
+    margin-right: 1rem;
+    margin-left: 0.3rem;
+    border-radius: 2rem;
+    background-color: rgb(71, 71, 71);
+    cursor: pointer;
+    color: white;
+  }
+
+  .nav-all-posts{
+    margin-right: 15rem;
+  }
+
+  .search-icon:hover{
+    background-color: rgb(123, 184, 184);
+    color: black;
+  }
+  
+  .log-out-btn{
+    width:2rem;
+    height: 2rem;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 2px solid red;
+    margin-left: 1rem;
+    margin-top: 0.7rem;
+  }
+  .logout-image{
+    width: 100%;
+    border-radius: 50%;
+    box-sizing: border-box;
+  }
+
   /* SignUp & SignIn*/
 
   .sign{
     display:flex;
     justify-content: center;
     align-items: center;
-    height:90vh;
+    height:100vh;
   }
 
   .sign-container{
@@ -114,6 +155,9 @@
      box-shadow: 2px 2px 2px blue;
      border-radius: 10px;
   }
+  .form-button input:hover,.contact-button:hover{
+     background-color: rgb(184, 224, 224);
+  }
   .sign-right{
     display: flex;
     flex-direction: column;
@@ -137,6 +181,47 @@
     display: flex;
     justify-content: center;
   }
+
+  @media only screen and (max-width: 1426px) {
+    .sign{
+      /* background-color: red; */
+    }
+    .sign-container{
+      width:80%;  
+      height:80%;
+    }
+  }
+
+  @media only screen and (max-width: 1108px) {
+    .sign-container{
+      /* background-color: aqua;   */
+      height:90%;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .sign-container{
+      display: flex;
+      flex-direction: column;
+      height:100%;
+      width: 100%;
+    }
+    .sign-left{
+      width:100%;   
+    }
+    .sign-right{
+      margin-top:1rem;
+      width:100%;
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    .sign-right img{
+      margin:0px;
+      width:90%;
+      height:90%;
+    }
+  }
+
  
  /* Contact Us Page */
   .contact-textarea{
@@ -160,14 +245,22 @@
   }
 
   .contact-me{
-    padding:1rem;
-    margin-bottom: 2rem;
+    padding:0.5rem;
+    margin-bottom: 0.5rem;
     box-sizing: border-box;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     display: flex;
     flex-direction: column;
     align-items: center;
     width:15rem;
+  }
+
+  .my-image{
+    width:10rem;
+    height:10rem;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin-bottom: 1rem;
   }
 
   @media only screen and (max-width: 780px) {
@@ -258,4 +351,5 @@
     margin-top: 1rem;
     font-size: 2rem;
   }
+
 

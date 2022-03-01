@@ -2,6 +2,7 @@
 /* 1.Upper Part */
 .profile-container{
     margin:0px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -9,20 +10,22 @@
     height: 100vh;
 }
 .profile-details{
-    /* background-color: blue; */
-    height: 50%;
+    /* background-color: rgb(167, 167, 184); */
     display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
 }
 .profile-pic-container{
-    width:30%;
+    width:37%;
     /* background-color: aqua; */
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .profile-pic-box{
-    width:80%;
-    height: 80%;
+    width:90%;
+    height: 90%;
     /* background-color: red; */
     display: flex;
     flex-direction: column;
@@ -30,55 +33,114 @@
     align-items: center;
 }
 .profile-pic{
-    width:75%;
+    width:15rem;
+    height: 15rem;
     border-radius: 50%;
+    border: 2px solid rgb(27, 36, 49);
 }
+
+.profile-pic:hover{
+    box-shadow: 1rem 0.2rem 1rem grey;
+    width: 16rem;
+    height: 16rem;
+}
+
+.update-profile{
+    display: flex;
+    flex-direction: column;
+}
+.update-profile form{
+    display: flex;
+    flex-direction: column;
+}
+
+.choose-file:hover{
+    cursor: pointer;
+}
+
+#profile-update-button{
+    background-color: rgb(166, 167, 241);
+}
+
+#profile-update-button:hover{
+    box-shadow: 0.2rem 0.2rem 1rem rgb(127, 127, 202);
+}
+
 .profile-summary{
-    width:70%;
+    width:100%;
     box-sizing: border-box;
+    /* background-color: blueviolet; */
 }
 
 .profile-heading{
     display: flex;
+    flex-direction: row;
     width: 100%;
 }
 
 .profile-name{
-   width: 70%;
+   width: 100%;
    margin-top: 2rem;
-   margin-left: 2rem;
+   /* margin-left: 2rem; */
 }
 
 .profile-name-heading{
+   color: rgb(55, 61, 141); 
    font-size:2.5 rem;
    font-weight: bold;
    display: flex;
    justify-content: center;
 }
 
-.profile-edit{
-    width:30%;
+.profile-name-heading:hover{
+   /* background-color: black; */
+   color: rgb(59, 59, 248);
+   cursor: pointer;
+   text-shadow: 0.5rem 0.5rem 0.5rem blue;
+   font-size: 3rem;
+}
+
+.heading-details-count{
+    text-decoration: none;
+    color: black;
+    /* background-color: aqua; */
+    cursor: pointer;
+}
+
+.heading-details-count:hover{
+    color: blue;
+}
+
+.extra-button{
     display: flex;
-    justify-content: flex-end;
-    margin-top:2rem;
-    margin-right: 1.5rem;
+    flex-direction: row;
+    justify-content: center;
 }
-.profile-edit button{
-    padding:0rem 0.3rem;
-    border-radius: 2rem;
-    background-color: rgb(177, 172, 172);
+.profile-edit{
+    border: 2px solid blue;
+    height: 2.5rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    width: 8rem;
+    font-size: 1.2rem;
+    background-color: white;
+    box-shadow: 0.5rem 0.5rem 1rem rgb(108, 108, 206);
+    color: black;
 }
-.profile-edit button:hover{
-    background-color: rgb(150, 150, 197);
-    box-shadow: 0.5rem 0.5rem 1rem blue;
+
+.profile-edit:hover{
+    background-color: black;
+    box-shadow: 0.5rem 0.5rem 1rem rgb(108, 108, 206);
+    color: white;
 }
 
 .heading-details{
-    width:70%;
+    width:100%;
     display: flex;
     justify-content: space-around;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
 }
+
 .heading-details li{
     list-style: none;
     display: flex;
@@ -91,6 +153,46 @@
     font-size: 1.5rem;
     font-weight: bold;
 }
+
+.follow-unfollow{
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+}
+
+.common{
+    background-color: white;
+    height: 2.8rem;
+    padding: 0rem 1rem;
+    color:black;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border:0.2rem solid black;
+    border-radius: 1rem;
+}
+
+.common:hover{
+    background-color: black;
+    color:white;
+    border:0.2rem solid rgb(134, 132, 132);
+}
+
+@media only screen and (max-width: 550px) {
+    .profile-details{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem 0rem 0rem 1rem;
+    }
+    .profile-pic{
+        width:10rem;
+        height: 10rem;
+        border-radius: 50%;
+        border: 3px solid rgb(27, 36, 49);
+        box-shadow: 1rem 0.5rem 03rem grey;
+    }
+}
+
 
 /* 2.Lower Part */
 .my-details{
@@ -126,3 +228,98 @@
     display: flex;
     justify-content: center;
 }
+ 
+.my-posts{
+    display: flex;
+    width:100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.my-post-box{
+   width:17rem;
+   height:17rem;
+   margin-left:1.5rem;
+   margin-bottom: 1.5rem;
+   /* background-color: black; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+
+.my-post-pic{
+    width:94%;
+    height:94%;
+    border-radius: 0.4rem;
+    z-index: 1;
+    /* opacity: 0.9; */
+}
+
+
+
+.my-post-box button{
+    font-size: 1rem;
+    position: relative;
+    align-items: center;
+    bottom: 2.5rem;
+    z-index: 2;
+    background-color: white;
+    opacity: 0.4;
+    font-size: 1.4rem;
+    color:black;
+    /* background-color: transparent; */
+    border: 2px solid black;
+    border-radius: 0.8rem;
+} 
+
+.my-post-pic:hover{
+   width: 100%;
+   height: 100%;
+   box-shadow: 1rem 1rem 1rem gray;
+}
+
+.create-event-button{
+    
+}
+
+.user-data-list{
+    display: flex;
+    justify-content: row;
+    align-items: center;
+    border:1px solid grey ;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.user-data-list img{
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+}
+
+.user-data-list h3{
+    margin-left: 1.5rem;
+}
+
+@media only screen and (max-width: 550px) {
+    .profile-details{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem 0rem 1rem 0rem;
+    }
+    .profile-pic{
+        width:13rem;
+        height: 13rem;
+        border-radius: 50%;
+        border: 3px solid rgb(27, 36, 49);
+        box-shadow: 1rem 0.5rem 03rem grey;
+    }
+    .my-post-box{
+        width: 40%;
+        height: 10rem;
+    }
+}
+

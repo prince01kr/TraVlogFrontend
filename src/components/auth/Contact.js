@@ -44,7 +44,8 @@ const Contact = () => {
           </div>
 
           <div className="contact-right">
-            <h2 className='contact-heading form-heading'>My Contact Details</h2>
+            <h2 className='contact-heading form-heading'>Developed By:</h2>
+            <img className="my-image" src="https://res.cloudinary.com/princekr20/image/upload/v1645642523/TraVlog/me2_h8743q.jpg" alt="Loading Image"></img>
             <div className='contact-me'>
               <span className='contact-me-details'>Email</span>
               <span className='conatct-me-val'>princekumargilli@gmail.com</span>

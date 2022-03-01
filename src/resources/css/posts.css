@@ -1,0 +1,236 @@
+
+/* All Post Page */
+
+.all-posts-container{
+    margin: 0px;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+}
+
+.all-post-container-box{
+    /* background-color: rgb(127, 167, 219); */
+    width: 60%;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+}
+
+.all-posts-post{
+   margin: 1rem 0rem 1rem 0rem;
+   border: 1px solid rgb(145, 143, 143);
+   border-radius: 0.8rem;
+   box-shadow: 2px 2px 1rem grey;
+}
+
+.all-post-heading{
+    display: flex;
+    width: 100%;
+    margin-top: 0.5rem;
+    justify-content: center;
+    /* background-color: rgb(87, 218, 70); */
+}
+
+.all-posts-heading-pic{
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 1.2rem;
+    margin-top: 0.4rem;
+}
+
+.all-posts-heading-pic img{
+    width: 3.5rem;
+    height: 3.5rem;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.all-posts-heading-name{
+    display: flex;
+    align-items: center;
+}
+
+.all-posts-heading-name h2{
+   font-weight: bold;
+   font-size: 1.5rem;
+}
+
+.all-post-body{
+    width:100%;
+    margin-bottom:1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.all-post-body h3{
+    color: rgb(9, 161, 161);
+    margin:0px;
+}
+.all-post-body p{
+    color: rgb(129, 34, 34);
+    font-size: 1.2rem;
+}
+.all-post-body-pic{
+    width: 95%;
+    /* height: 20rem; */
+    border-radius: 0.5rem;
+}
+.all-post-like{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+}
+
+.likee{
+    display: flex;
+    align-items: center;
+}
+
+.comment-section{
+    margin-left:1.5rem;
+    margin-top:0.5rem;
+    width:75%;
+    height: 2.6rem;
+    border: none;
+    border-bottom: 2px solid red;
+}
+
+.comment-button{
+    display: flex;
+    margin:0.7rem 0rem 0.2rem 1.5rem;
+}
+
+.comment-btn{
+    margin-right: 1.5rem;
+    background-color: rgb(216, 245, 216);
+    border: none;
+    height: 2rem;
+    padding: 0rem 0.5rem;
+    border-radius: 2rem;
+    box-shadow: 0.1rem 0.1rem 0.5rem green;
+}
+
+.hit-comment{
+    background-color: rgb(216, 245, 216);
+    border-radius: 0.2rem;
+    box-shadow: 0.1rem 0.1rem 0.5rem green;
+    width: 2rem;
+    margin-left: 0.5rem;
+}
+
+.comment-btn:hover,.hit-comment:hover{
+    background-color: rgb(182, 228, 228);
+}
+
+.likee-icon:hover{
+    box-shadow: 0.5rem 0.5rem 0.5rem rgb(173, 245, 154);
+    cursor: pointer;;
+}
+
+.delete-post{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0px;
+    align-items: center;
+    margin-left: 2rem;
+    float: right;
+}
+
+.delete-post-btn{
+    color:black;
+    margin-right:0.5rem;
+    font-size: 2rem;
+    cursor: pointer;
+    background-color:white;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+
+@media only screen and (max-width: 550px) {
+    .all-post-container-box{
+        width:100%;
+    } 
+    .all-posts-post{
+        margin: 1rem;
+    }
+}
+
+
+/* Create  Post */
+
+.create-posts-container{
+    display:flex;
+    width:100%;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.create-container-box{
+    width: 70%;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.create-post-upload-image{
+    margin-top: 1rem;
+}
+
+.create-post-button{
+   margin-top: 1rem; 
+   background-color: rgb(206, 225, 241);
+   width: 5rem;
+   height: 2.5rem;
+   border: 2px solid blue;
+   border-radius: 5rem;
+   box-shadow: 2px 2px 2px blue;
+}
+
+.create-post-button:hover{
+    background-color: rgb(125, 221, 221);
+}
+
+@media only screen and (max-width: 550px) {
+    .create-container-box{
+        width:100%;
+    }
+    .create-post-upload-image{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* All Comments */
+.all-comments-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.all-comment{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 1rem 0rem 1rem;
+    border-bottom: 1px solid grey;
+}
+
+.comments-head{
+    display: flex;
+    flex-direction: row;
+}
+
+.comments-head img{
+    width:2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+}
+
+.comments-head h5{
+    margin-right: 2rem;
+}
