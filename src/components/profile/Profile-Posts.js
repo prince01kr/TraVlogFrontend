@@ -4,7 +4,7 @@ import MyPost from './MyPost';
 import Details from './Details';
 import Events from './Events';
 
-const Profile_Posts = ({mypost,allEvents}) => {
+const Profile_Posts = ({mypost,allEvents,userData}) => {
   return (
     <div className='profile-posts'>
        <Tabs 
@@ -24,7 +24,9 @@ const Profile_Posts = ({mypost,allEvents}) => {
               />
             </Tab>
             <Tab eventKey="details" title="Details">
-              <Details/>
+              <Details
+                userData={userData}
+              />
             </Tab>
         </Tabs>
     </div>

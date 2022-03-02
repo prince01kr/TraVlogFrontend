@@ -136,6 +136,7 @@ const Profile = () => {
         <Profile_Posts
           mypost={mypost}
           allEvents={allEvents}
+          userData={userData}
         />
       </div>
     </>

@@ -99,7 +99,7 @@ const Profile = () => {
             console.log(`Error: ${err}`);
         }
     }
-
+ 
     return (
         <>
             <div className='profile-container'>
@@ -118,9 +118,9 @@ const Profile = () => {
                         </div>
 
                         <ul className='heading-details'>
-                            <Link to={"/mypost/"+userId}><li><span className="heading-details-count">{mypost.length}</span>  <span className="heading-details-val">Posts</span></li></Link>
-                            <li key="2" onClick={handleShow} ><span className="heading-details-count">{otherUser.followers? otherUser.followers.length : 0}</span>  <span className="heading-details-val">Followers</span></li>
-                            <li key="3" onClick={handleShowFl} ><span className="heading-details-count">{otherUser.following ? otherUser.following.length : 0}</span>  <span className="heading-details-val">Followings</span></li>
+                            <Link className="heading-details-count" to={"/mypost/"+userId}><li><span className="heading-details-count">{mypost.length}</span>  <span className="heading-details-val">Posts</span></li></Link>
+                            <li key="2" className="heading-details-count" onClick={handleShow} ><span className="heading-details-count">{otherUser.followers? otherUser.followers.length : 0}</span>  <span className="heading-details-val">Followers</span></li>
+                            <li key="3" className="heading-details-count" onClick={handleShowFl} ><span className="heading-details-count">{otherUser.following ? otherUser.following.length : 0}</span>  <span className="heading-details-val">Followings</span></li>
                         </ul>
                         <div className="follow-unfollow">
                             {
