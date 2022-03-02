@@ -223,11 +223,12 @@ const OnePost = ({
                 {/*3.View All Comments Modal  */}
 
                 <Modal
-                    scrollable={true}
+                    scrollable={false}
                     show={show}
                     onHide={handleClose}
-                    backdrop="dynamic"
-                    keyboard={false}
+                    // backdrop="dynamic"
+                    // keyboard={false}
+                    // scrollable={true}
                 >
                     <Modal.Header closeButton>
                         <Modal.Title >All Comments</Modal.Title>
